@@ -223,7 +223,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base_url}}/products?search=&category_id=&sort_by=created_at&sort_dir=desc&per_page=10&page=1",
+							"raw": "{{base_url}}/products",
 							"host": [
 								"{{base_url}}"
 							],
@@ -232,57 +232,33 @@
 							],
 							"query": [
 								{
-									"key": "q",
-									"value": "mouse",
-									"description": "Pencarian berdasarkan judul / deskripsi produk (q atau search)",
-									"disabled": true
-								},
-								{
 									"key": "search",
 									"value": "",
-									"description": "Pencarian berdasarkan judul / deskripsi produk",
-									"disabled": true
-								},
-								{
-									"key": "category",
-									"value": "electronics",
-									"description": "Filter berdasarkan Slug/Nama Kategori",
+									"description": "Pencarian berdasarkan judul / deskripsi produk (alias: q)",
 									"disabled": true
 								},
 								{
 									"key": "category_id",
 									"value": "1",
-									"description": "Filter berdasarkan ID Kategori",
-									"disabled": true
-								},
-								{
-									"key": "sort",
-									"value": "price_asc",
-									"description": "Opsi sorting: price_asc, price_desc, newest",
+									"description": "Filter berdasarkan ID Kategori (alias: category)",
 									"disabled": true
 								},
 								{
 									"key": "sort_by",
-									"value": "price",
-									"description": "Urutkan berdasarkan: price, created_at, title, stock",
+									"value": "created_at",
+									"description": "Urutkan berdasarkan: price, created_at, title, stock (alias: sort)",
 									"disabled": true
 								},
 								{
 									"key": "sort_dir",
-									"value": "asc",
+									"value": "desc",
 									"description": "Arah urutan: asc, desc",
-									"disabled": true
-								},
-								{
-									"key": "limit",
-									"value": "10",
-									"description": "Jumlah item per halaman (max: 50)",
 									"disabled": true
 								},
 								{
 									"key": "per_page",
 									"value": "10",
-									"description": "Jumlah item per halaman",
+									"description": "Jumlah item per halaman / max 50 (alias: limit)",
 									"disabled": true
 								},
 								{
